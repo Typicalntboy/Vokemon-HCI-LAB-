@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokemon</title>
+    <link rel="stylesheet" href="../Asset/Style/login.css">
+    <link rel="stylesheet" href="../Asset/Global/navbar.css">
+    <link rel="stylesheet" href="../Asset/Global/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navLeft">
+            <ul>
+                <div class="Logo">
+                    <a href="./index.html" id="logo">VokemonS</a>
+                </div>
+            </ul>
+        </div>
+        <div class="navMid">
+            <ul>
+                <li><a href="./vokemon.html">Vokemon</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./tournament.html">Tournament</a></li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul>
+                <li><input type="checkbox" id="triangle"></li>
+                <li><p id="userLog"></p></li>
+                <li><label for="triangle" id="dropDown">▼/label></li>
+                <button id="logOut" onclick="runLogOut()">Log Out</button>
+
+                <div class="loginRegisterOut">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </div>
+            </ul>  
+        </div>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" id="burgerbtn">&equiv;</label>
+
+        <!-- Navbar Responsive -->
+        <div class="navRespons">
+            <div class="menu">
+                <a href="./vokemon.html">Vokemon</a>
+                <a href="./news.html">News</a>
+                <a href="./tournament.html">Tournament</a>
+            </div>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Register</a>
+        </div>
+    </div>
+    
+    <!-- content -->
+    <main>
+        <div class="loginPage">
+            <img id="bg" src="../Asset/Image/VukemonS_home.jpg">
+        </div>
+        <header>
+            <form>
+                <h1>Login</h1>
+                <section id="email">
+                    <p>Email Address</p>
+                    <input type="email" id="uemail" name="inputEmail"  placeholder="test@123.com" size="20" required>
+                </section>
+                <section id="password">
+                    <p>Password</p>
+                    <input type="password" id="upassword" name="inputPassword" placeholder="Insert New Password" size="20" required>
+                </section>
+                <section class="confirmAcc">
+                    <input id="uconfirmAcc" name="terms" type="checkbox">
+                    <p>Remember Me</p>
+                </section>
+                <div class="registCon">
+                    <button id="uregistButton" type="button" onclick="runLoginValidation()" class="btnRegist">LOGIN</button>
+                </div>
+            </form>
+        </header>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="trademarks">
+            <div id="socialIcon" class="socialIcons">
+                <a href="https://twitter.com/M_sajid28" id="twitter">
+                    <img src="../Asset/twitter-icon-white.png" alt="Twitter Bio" width="10px" height="10px">
+                </a>
+                <a href="https://web.facebook.com/sajid.2810/" id="facebook">
+                    <img src="../Asset/facebook-logo-white.png" alt="Facebook Bio" width="10px" height="10px">
+                </a>
+                <a href="https://www.instagram.com/typicalntboy/" id="instagram">
+                    <img src="../Asset/Instagram-icon-white.png" alt="Instagram Bio" width="10px" height="10px">
+                </a>
+            </div>
+            <p>Copyright &copy; 2023 Muhammad Sajid. All Rights Reserved.</p>
+        </div>
+    </footer> 
+</body>
+<script src="../script/jquerry.js"></script>
+<script src="../Script/loginValidation.js"></script>
+</html>

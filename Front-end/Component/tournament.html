@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokemon</title>
+    <link rel="stylesheet" href="../Asset/Style/tournament.css">
+    <link rel="stylesheet" href="../Asset/Global/navbar.css">
+    <link rel="stylesheet" href="../Asset/Global/footer.css">
+    <script src="../../script/jquerry.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navLeft">
+            <ul>
+                <div class="Logo">
+                    <a href="./index.html" id="logo">VokemonS</a>
+                </div>
+            </ul>
+        </div>
+        <div class="navMid">
+            <ul>
+                <li><a href="./vokemon.html">Vokemon</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./tournament.html">Tournament</a></li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul>
+                <li><input type="checkbox" id="triangle"></li>
+                <li><p id="userLog"></p></li>
+                <li><label for="triangle" id="dropDown">▼/label></li>
+                <button id="logOut" onclick="runLogOut()">Log Out</button>
+
+                <div class="loginRegisterOut">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </div>
+            </ul>  
+        </div>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" id="burgerbtn">&equiv;</label>
+
+        <!-- Navbar Responsive -->
+        <div class="navRespons">
+            <div class="menu">
+                <a href="./vokemon.html">Vokemon</a>
+                <a href="./news.html">News</a>
+                <a href="./tournament.html">Tournament</a>
+            </div>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Register</a>
+        </div>
+    </div>
+    
+    <!-- content -->
+    <main>
+        <div class="vokemonTournamnetbg">
+            <img id="tournamentbg" src="../Asset/Image/TournamentBackground.jpg">
+            <header>
+                <h1>VokemonS</h1>
+                <br>
+                <p class="description">Explore Vokemon world where friendly monsters live and became the best Vokemon Trainer to conquire the Vokemon world</p>
+            </header>
+        </div>
+        <div class="vokemonList">
+            <div class="vokemonListImg">
+                <img id="vokemonListImg" src="../Asset/Image/Vokemon-Ongoing-Tournament.jpg" alt="Vokemon List" width="680px" height="370px">
+            </div>
+            <div class="vokemonListContainer">
+                <h2>Ongoing Tournamnet</h2>
+                <br>
+                <h3>Master League and Holiday Cup:
+                    Great League Edition</h3>
+                <p>
+                    The Master League and Holiday Cup: Great League Edition will run from December 15, 2023, at 1:00 p.m. to December 22, 2023, at 1:00 p.m. PT.
+                </p>
+            </div>
+        </div>
+        <div class="vokemonGeneration">
+            <div class="vokemonGenerationContainer">
+                <h2>Upcoming Tournamnet</h2>
+                <br>
+                <h3>Ultra League and Retro Cup:
+                    Great League Edition</h3>
+                <p>
+                    The Ultra League and Retro Cup: Great League Edition will run from December 8, 2023, at 1:00 p.m. to December 15, 2023, at 1:00 p.m. PT.
+                </p>
+            </div>
+            <div class="vokemonGenerationImg">
+                <img id="vokemonGenerationImg" src="../Asset/Image/Vokemon-Upcoming-Tournament.jpg" alt="VOkemon List" width="680px" height="370px">
+            </div>
+        </div>
+        <div class="vokemonMonster">
+            <div class="vokemonMonsterTitle">
+                <h1>Vokemon Monster</h1>
+            </div>
+            <div class="vokemonMonsterList">
+                <ul>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="monster1">
+                        <img src="../Asset/Image/Bulbasaur.png" width="210px" height="210px">
+                        <div class="monsterTitle1">
+                            <p>#0001</p>
+                            <h4>Bulbasaur</h4>
+                        </div>
+                        <div class="monsterDesc">
+                            <div class="monsterClass">
+                                <p>Category:</p>
+                                <p>Abilities:</p>
+                            </div>
+                            <div class="monsterClassIn">
+                                <p>Seed</p>
+                                <p>Overgrown</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="trademarks">
+            <div id="socialIcon" class="socialIcons">
+                <a href="https://twitter.com/M_sajid28" id="twitter">
+                    <img src="../Asset/twitter-icon-white.png" alt="Twitter Bio" width="10px" height="10px">
+                </a>
+                <a href="https://web.facebook.com/sajid.2810/" id="facebook">
+                    <img src="../Asset/facebook-logo-white.png" alt="Facebook Bio" width="10px" height="10px">
+                </a>
+                <a href="https://www.instagram.com/typicalntboy/" id="instagram">
+                    <img src="../Asset/Instagram-icon-white.png" alt="Instagram Bio" width="10px" height="10px">
+                </a>
+            </div>
+            <p>Copyright &copy; 2023 Muhammad Sajid. All Rights Reserved.</p>
+        </div>
+    </footer> 
+</body>
+<!-- <script src="../../script/AccStat.js"></script> -->
+</html>

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+body{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: #0C1C3E;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding-top: 10vh;
+}
+
+.vokemonEventNews{
+    width: 100%;
+    height: auto;
+    background-color: #0F4B83;
+}
+
+/* Hot Event */
+.vokemonHotEvent{
+    padding-left: 4vw;
+    padding-top: 1vh;
+}
+
+.vokemonHotEvent h1{
+    font-weight: 500;
+    font-size: 48px;
+    padding-bottom: 5px;
+}
+
+.vokemonHotEventPost{
+    display: flex;
+}
+
+#hotEvent1, #hotEvent2, #hotEvent3, #hotEvent4{
+    width: 90vw; 
+    max-width: 400px; 
+    height: 400px;
+    margin: auto 10px 20px;
+    border: 1px solid #0F4B83;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+#hotEvent1 a, #hotEvent2 a, #hotEvent3 a, #hotEvent4 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#hotEventImg1, #hotEventImg2, #hotEventImg3, #hotEventImg4{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.hotEventMessage1, .hotEventMessage2, .hotEventMessage3, .hotEventMessage4{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.hotEventMessage1 p, .hotEventMessage2 p, .hotEventMessage3 p, .hotEventMessage4 p{
+    color: rgb(122, 122, 122);
+}
+
+/* Hot Post */
+.vokemonHotNews{
+    margin: 0 0 0 0;
+    padding-left: 4vw;
+}
+
+.vokemonHotNews h1{
+    font-weight: 500;
+    font-size: 48px;
+}
+
+#hotNews1, #hotNews2, #hotNews3, #hotNews4{
+    width: 90vw;
+    max-width: 540px;
+    height: 240px;
+    margin: auto 10px 30px;
+    text-decoration: none;
+    border: 1px solid #0F4B83;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+#hotNews1 a, #hotNews2 a, #hotNews3 a{
+    text-decoration: none;
+}
+
+.hotNewsColumn1, .hotNewsColumn2, .hotNewsColumn3, .hotNewsColumn4{ 
+    display: flex;
+    flex-direction: row;
+}
+
+#hotNewsImg1, #hotNewsImg2, #hotNewsImg3{
+    margin-left: 20px;
+    margin-top: 40px;
+    border-radius: 16px;
+}
+
+.hotNewsMessage1, .hotNewsMessage2, .hotNewsMessage3{
+    margin: 40px 15px;
+    color: white;
+}
+
+.hotNewsMessage1 p, .hotNewsMessage2 p, .hotNewsMessage3 p{
+    font-size: 16px;
+    text-align: justify;
+    color: rgb(122, 122, 122);;
+}
+
+
+/* More News */
+
+.vokemonNews{
+    width: 100%;
+    height: 100vh;
+    padding-left: 4vw;
+    padding-top: 3vh;
+}
+
+.vokemonNews h1{
+    font-weight: 500;
+    font-size: 48px;
+    padding-bottom: 5px;
+}
+
+#news1, #news2, #news3, #news4, #news5, #news6, #news7, #news8{
+    width: 90vw;
+    max-width: 400px;
+    height: 400px;
+    margin: auto 10px 30px;
+    border: 1px solid #0F4B83;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+#news1 a, #news2 a, #news3 a, #news4 a, #news5 a, #news6 a, #news7 a, #news8 a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#newsImg1, #newsImg2, #newsImg3, #newsImg4,#newsImg5, #newsImg6, #newsImg7, #newsImg8{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.newsMessage1, .newsMessage2, .newsMessage3, .newsMessage4, .newsMessage5, .newsMessage6, .newsMessage7, .newsMessage8{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+}
+
+.newsMessage1 p, .newsMessage2 p, .newsMessage3 p, .newsMessage4 p, .newsMessage5 p, .newsMessage6 p, .newsMessage7 p, .newsMessage8 p{
+    color: rgb(122, 122, 122);
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokemon</title>
+    <link rel="stylesheet" href="../Asset/Style/news.css">
+    <link rel="stylesheet" href="../Asset/Global/navbar.css">
+    <link rel="stylesheet" href="../Asset/Global/footer.css">
+    <script src="../../script/jquerry.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navLeft">
+            <ul>
+                <div class="Logo">
+                    <a href="./index.html" id="logo">VokemonS</a>
+                </div>
+            </ul>
+        </div>
+        <div class="navMid">
+            <ul>
+                <li><a href="./vokemon.html">Vokemon</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./tournament.html">Tournament</a></li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul>
+                <li><input type="checkbox" id="triangle"></li>
+                <li><p id="userLog"></p></li>
+                <li><label for="triangle" id="dropDown">▼/label></li>
+                <button id="logOut" onclick="runLogOut()">Log Out</button>
+
+                <div class="loginRegisterOut">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </div>
+            </ul>  
+        </div>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" id="burgerbtn">&equiv;</label>
+
+        <!-- Navbar Responsive -->
+        <div class="navRespons">
+            <div class="menu">
+                <a href="./vokemon.html">Vokemon</a>
+                <a href="./news.html">News</a>
+                <a href="./tournament.html">Tournament</a>
+            </div>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Register</a>
+        </div>
+    </header>
+    
+    <!-- content -->
+    <main>
+        <div class="vokemonEventNews">
+            <div class="vokemonHotEvent">
+                <h1>Vokemon Event</h1>
+                <div class="vokemonHotEventPost">
+                    <ul>
+                        <li id="hotEvent1">
+                            <a href="https://leekduck.com/events/along-the-routes/">
+                                <img id="hotEventImg1" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                                <div class="hotEventMessage1">
+                                    <h2>Along the Routes</h2>
+                                    <br>
+                                    <p>
+                                        The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="hotEvent2">
+                            <a href="https://leekduck.com/events/adamant-time/">
+                                <img id="hotEventImg2" src="../Asset/Image/Vokemon-event-2.jpg" alt="Hot Event 2" width="397px" height="180px">
+                                <div class="hotEventMessage2">
+                                    <h2>Adamant Time</h2>
+                                    <br>
+                                    <p>
+                                        No need to take a trip back to where it all started in the Kanto region—it appears that the Kanto region has come to us across time and space!
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="hotEvent3">
+                            <a href="https://leekduck.com/events/raidhour20231127/">
+                                <img id="hotEventImg2" src="../Asset/Image/Vokemon-event-3.jpg" alt="Hot Event 3" width="397px" height="180px">
+                                <div class="hotEventMessage2">
+                                    <h2>Regigigas Raid Hour</h2>
+                                    <br>
+                                    <p>
+                                        A Raid Hour featuring Regigigas is scheduled from 6 to 7 pm Local Time. During this hour there will be an increased number of five-star Raids.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="hotEvent4">
+                            <a href="https://leekduck.com/events/go-battle-week-timeless-travels/">
+                                <img id="hotEventImg2" src="../Asset/Image/Vokemon-event-4.jpg" alt="Hot Event 4" width="397px" height="180px">
+                                <div class="hotEventMessage2">
+                                    <h2>GO Battle Week: Times</h2>
+                                    <br>
+                                    <p>
+                                        The maximum number of sets you can play per day will be increased from five to 10—for a total of 50 battles—from 12:00 a.m. to 11:59 p.m. local time. Trainers will also receive 4× Stardust from win rewards
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="vokemonHotNews">
+                <h1>Vokemon News</h1>
+                <div class="vokemonHotNewsPost">
+                    <ul>
+                        <li id="hotNews1">
+                            <a href="https://www.pokemon.com/us/pokemon-news/face-dialga-and-palkia-in-pokemon-scarlet-and-pokemon-violet-tera-raid-battles-and-add-the-mythical-pokemon-darkrai-to-your-team">
+                                <div class="hotNewsColumn1">
+                                    <img id="hotNewsImg1" src="../Asset/Image/Vokemon-Hotnews-1.png" alt="" width="260px" height="165px">
+                                    <div class="hotNewsMessage1">
+                                        <h4>Face Dialga and Palkia in Vokemon Scarlett</h4>
+                                        <p>Beat the December chill with heated Tera Raid Battles and a foreboding distribution.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="hotNews2">
+                            <a href="https://www.pokemon.com/us/pokemon-news/add-a-shiny-lucario-to-your-team">
+                                <div class="hotNewsColumn2">
+                                    <img id="hotNewsImg2" src="../Asset/Image/Vokemon-Hotnews-2.png" alt="" width="260px" height="165px">
+                                    <div class="hotNewsMessage2">
+                                        <h4>Add a Shiny Lucario to Your Team</h4>
+                                        <p>Use this password to have the Aura Pokémon fight its way into your Pokémon Scarlet or Pokémon Violet game.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="hotNews3">
+                            <a href="http://">
+                                <div class="hotNewsColumn3">
+                                <img id="hotNewsImg3" src="../Asset/Image/Vokemon-Hotnews-3.png" alt="" width="260px" height="165px">
+                                <div class="hotNewsMessage3">
+                                    <h4>Pokémon TCG Illustrate Contest 2024 Tips</h4>
+                                    <p>Two experts give advice on how to submit high-quality art for the Pokémon TCG Illustration Contest 2024.</p>
+                                </div>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vokemonNews">
+            <h1>More News</h1>
+            <ul>
+                <li id="news1">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg1" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage1">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news2">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg2" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage2">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news3">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg3" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage3">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news4">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg4" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage4">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li id="news5">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg5" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage5">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news6">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg6" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage6">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news7">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg7" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage7">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news8">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg8" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="397px" height="180px">
+                        <div class="newsMessage8">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="trademarks">
+            <div id="socialIcon" class="socialIcons">
+                <a href="https://twitter.com/M_sajid28" id="twitter">
+                    <img src="../Asset/twitter-icon-white.png" alt="Twitter Bio" width="10px" height="10px">
+                </a>
+                <a href="https://web.facebook.com/sajid.2810/" id="facebook">
+                    <img src="../Asset/facebook-logo-white.png" alt="Facebook Bio" width="10px" height="10px">
+                </a>
+                <a href="https://www.instagram.com/typicalntboy/" id="instagram">
+                    <img src="../Asset/Instagram-icon-white.png" alt="Instagram Bio" width="10px" height="10px">
+                </a>
+            </div>
+            <p>Copyright &copy; 2023 Muhammad Sajid. All Rights Reserved.</p>
+        </div>
+    </footer> 
+</body>
+<!-- <script src="../../script/AccStat.js"></script> -->
+</html>

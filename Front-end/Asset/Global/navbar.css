@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.navbar{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0; 
+    align-items: center;
+    justify-content: space-between;
+    border: #05122E solid 2px;
+    /* box-shadow: 0px 8px 25px #888888; */
+    padding: 0px 10px;
+    background-color: #05122E;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar ul{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 22px;
+    width: 100%;
+}
+
+.navbar #logo{
+    color: #364D9D;
+    font-weight: 700;
+    font-size: 44px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.navMid a{
+    text-align: center;
+    color: white;
+}
+
+.navRight a{
+    color: #364D9D;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+#hamburger{
+    display: none;
+}
+#burgerbtn{
+    font-size: 3rem;
+    display: none;
+    border: 1px solid;
+    height: 40px;
+    align-items: center;
+    width: 50px;
+    justify-content: center;
+    border-radius: 15%;
+    border-color: #888888;
+    color: white;
+    cursor: pointer;
+}
+.navRespons{
+    margin-left: -10px;
+    padding-left: 20px;
+    background: white;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    box-shadow: 0px 10px 9px -3px #888888;
+}
+.navRespons a{
+    margin-bottom: 10px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+a{
+    color: black;
+}
+
+
+@media screen and (max-width:600px) {
+    .navRespons {
+        top: 10vh;
+    }
+    #burgerbtn{
+        display:flex;
+    }
+    .navRight{
+        display: none;
+    }
+    .navMid{
+        display: none;
+    }
+    #hamburger:checked ~ .navRespons{
+        display: flex;
+    }
+    #logo { 
+        font-size: 20px;
+    }
+}
+
+#triangle, #userLog, #dropDown{
+    display: none;
+}
+
+#logOut{
+    display: none;
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 0px;
+    padding: 10px 80px;
+    padding-left: 5px !important;
+    border: solid 0.5px;
+    border-radius: 4px;
+}

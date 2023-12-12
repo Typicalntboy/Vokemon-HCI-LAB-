@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vokemon</title>
+    <link rel="stylesheet" href="../Asset/Style/index.css">
+    <link rel="stylesheet" href="../Asset/Global/navbar.css">
+    <link rel="stylesheet" href="../Asset/Global/footer.css">
+    <script src="../../script/jquerry.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navLeft">
+            <ul>
+                <div class="Logo">
+                    <a href="./index.html" id="logo">VokemonS</a>
+                </div>
+            </ul>
+        </div>
+        <div class="navMid">
+            <ul>
+                <li><a href="./vokemon.html">Vokemon</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./tournament.html">Tournament</a></li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul>
+                <li><input type="checkbox" id="triangle"></li>
+                <li><p id="userLog"></p></li>
+                <li><label for="triangle" id="dropDown">▼/label></li>
+                <button id="logOut" onclick="runLogOut()">Log Out</button>
+
+                <div class="loginRegisterOut">
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="./register.html">Register</a></li>
+                </div>
+            </ul>  
+        </div>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger" id="burgerbtn">&equiv;</label>
+
+        <!-- Navbar Responsive -->
+        <div class="navRespons">
+            <div class="menu">
+                <a href="./vokemon.html">Vokemon</a>
+                <a href="./news.html">News</a>
+                <a href="./tournament.html">Tournament</a>
+            </div>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">Register</a>
+        </div>
+    </div>
+    
+    <!-- content -->
+    <main>
+        <div class="showMenuMainpage">
+            <video src="../Asset/PokemonLoopVideo.mp4" autoplay loop playsinline muted></video>
+
+            <header>
+                <h1>VokemonS</h1>
+                <br>
+                <p class="description">Explore Vokemon world where friendly monsters live and became the best Vokemon Trainer to conquire the Vokemon world</p>
+            </header>
+
+        </div>
+        <div class="event">
+            <div class="eventImg">
+                <a href="https://leekduck.com/events/along-the-routes/">
+                    <img id="eventImg" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" alt="Hot Event 1" width="440px" height="240px">
+                </a>
+            </div>
+            <div class="eventContainer">
+                <p class="eventTag">#LatestEvent</p>
+                <h2>Along the Routes</h2>
+                <br>
+                <p>
+                    The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time). Trainers can meet Mateo at the end of Routes that they explore and participate in his Gift Exchange with Trainers from all around the world.
+                </p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="newsTitle">
+                <h1>Latest News</h1>
+                <div class="newsMessage">
+                    Know more about update and news related to season, activity, FAQ and many more. This information helps you to improve your knowledge to become the best Vokemon trainer in the world
+                </div>
+            </div>
+            <br>
+            <ul>
+                <li id="news1">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg1" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" width="427px" height="210px">
+                        <div class="newsMessage1">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news2">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg2" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" width="427px" height="210px">
+                        <div class="newsMessage2">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news3">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg3" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" width="427px" height="210px">
+                        <div class="newsMessage3">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li id="news4">
+                    <a href="https://leekduck.com/events/along-the-routes/">
+                        <img id="newsImg4" src="../Asset/Image/Vokemon-event-meet-mateo.jpg" width="427px" height="210px">
+                        <div class="newsMessage4">
+                            <h2>Along the Routes</h2>
+                            <br>
+                            <p>
+                                The start of a new Season brings with it some exciting updates! We’re thrilled to announce a fresh face joining Vokémon GO—Mateo! Beginning on December 4, 2023 (Pacific Standard Time).
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="trademarks">
+            <div id="socialIcon" class="socialIcons">
+                <a href="https://twitter.com/M_sajid28" id="twitter">
+                    <img src="../Asset/twitter-icon-white.png" alt="Twitter Bio" width="10px" height="10px">
+                </a>
+                <a href="https://web.facebook.com/sajid.2810/" id="facebook">
+                    <img src="../Asset/facebook-logo-white.png" alt="Facebook Bio" width="10px" height="10px">
+                </a>
+                <a href="https://www.instagram.com/typicalntboy/" id="instagram">
+                    <img src="../Asset/Instagram-icon-white.png" alt="Instagram Bio" width="10px" height="10px">
+                </a>
+            </div>
+            <p>Copyright &copy; 2023 Muhammad Sajid. All Rights Reserved.</p>
+        </div>
+    </footer> 
+</body>
+<!-- <script src="../../script/AccStat.js"></script> -->
+</html>
