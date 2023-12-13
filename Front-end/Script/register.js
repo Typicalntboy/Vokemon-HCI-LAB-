@@ -7,39 +7,38 @@ function runRegister() {
     var termsCheckbox = document.getElementById("uconfirmAcc");
     var genderDropdown = document.getElementById("ugender");
 
-    // Check if all input boxes are filled
+    // Melakukan Vlidasi apakah semua input sudah terisi
     if (!firstName || !lastName || !email || !password || !confirmPassword) {
         alert("Please fill in all fields");
         return;
     }
 
-    // Check if a gender is selected
+    // Membuat validasi apakah gender sudah dipilih
     if (genderDropdown.value === "") {
         alert("Please select your gender");
         return;
     }
 
-    // Check for SQL injection symbols in email and password
+    // Membuat Validasi Parameter SQL injection di email dan password
     var sqlInjectionRegex = /[\\"'<>()\[\]{};]/;
     if (sqlInjectionRegex.test(email) || sqlInjectionRegex.test(password)) {
         alert("Invalid characters detected. Please use only letters, numbers, and common symbols.");
         return;
     }
 
-    // Check if password and confirm password match
+    // Membuat Validasi apakah Password dan Confirm Password bernilai sama
     if (password !== confirmPassword) {
         alert("Password and Confirm Password do not match");
         return;
     }
 
-    // Check if the terms and conditions checkbox is checked
+    // Membuat validasi apakah Checkbox Terms and Agreement sudah diisi
     if (!termsCheckbox.checked) {
         alert("Please agree to the terms and conditions");
         return;
     }
 
-    // If all validations pass, you can proceed with the registration logic
-    // For example, you can simulate a successful registration by redirecting to login.html
+    // Jika semua validasi sudah valid, maka akan redirect ke login page
     alert("Registration successful!");
-    window.location.href = "./login.html"; // Adjust the path as needed
+    window.location.href = "./login.html";
 }

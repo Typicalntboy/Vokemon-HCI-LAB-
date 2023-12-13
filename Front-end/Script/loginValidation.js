@@ -17,7 +17,7 @@ function runLoginValidation() {
     // Validasi apakah email dan password sudah sesuai dengan akun (contoh dengan akun admin)
     if (email === 'admin@admin.com' && password === 'Admin123') {
         alert('Login successful!');
-        // Redirect to index.html
+        // Redirect ke index.html
         window.location.href = './index.html';
     } else {
         alert('Invalid email address or password.');
