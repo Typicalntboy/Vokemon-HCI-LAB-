@@ -5,10 +5,17 @@ function runRegister() {
     var password = document.getElementById("upassword").value;
     var confirmPassword = document.getElementById("ucpassword").value;
     var termsCheckbox = document.getElementById("uconfirmAcc");
+    var genderDropdown = document.getElementById("ugender");
 
     // Check if all input boxes are filled
     if (!firstName || !lastName || !email || !password || !confirmPassword) {
         alert("Please fill in all fields");
+        return;
+    }
+
+    // Check if a gender is selected
+    if (genderDropdown.value === "") {
+        alert("Please select your gender");
         return;
     }
 
